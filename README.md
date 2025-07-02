@@ -1,44 +1,62 @@
-# Command-Line-To-Do-List-Application
+✅ Command-Line To-Do List Application
 
-# To-Do List Application
-A simple command-line to-do list application built with Python. This app allows users to add, view, complete, and delete tasks, with data stored persistently in a text file.
+🗒️ A simple yet powerful command-line To-Do List app built with Python. Manage your tasks right from your terminal — add 🆕, view 👀, complete ✅, and delete ❌ tasks. All your tasks are stored persistently in a tasks.txt file.
+✨ Features
 
-# Features
-Add new tasks with descriptions
-View all tasks with completion status
-Mark tasks as complete
-Delete tasks
-Persistent storage using a text file
+    ➕ Add new tasks with descriptions
 
-# Requirements
-Python 3.x
+    📋 View all tasks with their completion status
 
-# Setup
+    ✅ Mark tasks as complete
+
+    🗑️ Delete tasks
+
+    💾 Persistent storage using a text file
+
+🛠️ Requirements
+
+    🐍 Python 3.x
+
+🚀 Setup
+
 Clone the repository:
+
 git clone https://github.com/mathiasmunene/Command-Line-To-Do-List-Application
 cd todo-app
 
-Ensure Python 3 is installed:
+Check Python is installed:
 
 python3 --version
 
-# Run the application:
+Run the application:
+
 python3 main.py
 
-# Usage
-Launch the app with python3 main.py.
-Choose an option from the menu:
-1. View Tasks: Display all tasks with their completion status.
-2. Add Task: Enter a task description to add it.
-3. Complete Task: Mark a task as complete by entering its number.
-4. Delete Task: Remove a task by entering its number.
-5. Exit: Close the application.
+🧑‍💻 Usage
 
+Launch the app:
 
-Tasks are saved to tasks.txt and persist between sessions.
+python3 main.py
 
-# Contributing
-Feel free to fork this repository, make improvements, and submit pull requests!
+Then choose an option from the menu:
 
-# License
+    📋 View Tasks – See all your tasks and their status
+
+    ➕ Add Task – Type a task description to add it
+
+    ✅ Complete Task – Mark a task done by its number
+
+    🗑️ Delete Task – Remove a task by its number
+
+    🚪 Exit – Close the app
+
+📂 Your tasks are saved in tasks.txt and will be there when you return!
+🤝 Contributing
+
+Found a bug? 💡 Have an idea?
+Fork the repo, make your magic, and submit a pull request!
+Let’s make productivity fun together! 🙌
+📄 License
+
 This project is licensed under the MIT License.
+Use it, modify it, share it — just don’t forget to credit the authors 😄
