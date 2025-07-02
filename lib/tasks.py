@@ -11,6 +11,14 @@ def save_tasks(tasks):
         for task in tasks:
             file.write(f"{task['description']}|{task['completed']}\n")
 
+def add_task(tasks, description):
+    tasks.append({"description": description, "completed": False})
 
+def view_tasks(tasks):
+    if not tasks:
+        print("No tasks available.")
+        return
+    for i, task in enumerate(tasks, 1):
+        status = "✔" if task["completed"] else " "
+        print(f"{i}. [{status}] {task['description']}")
 
-            
