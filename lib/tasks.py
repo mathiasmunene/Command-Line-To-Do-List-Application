@@ -5,4 +5,12 @@ def load_tasks():
             return [{"description": task[0], "completed": task[1] == "True"} for task in tasks]
     except FileNotFoundError:
         return []
-    
+
+def save_tasks(tasks):
+    with open("tasks.txt", "w") as file:
+        for task in tasks:
+            file.write(f"{task['description']}|{task['completed']}\n")
+
+
+
+            
