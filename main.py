@@ -22,4 +22,13 @@ def main():
             add_task(tasks, description)
             save_tasks(tasks)
             print("Task added successfully.")
-        
+        elif choice == "3":
+            view_tasks(tasks)
+            try:
+                index = int(input("Enter task number to mark as complete: ")) - 1
+                complete_task(tasks, index)
+                save_tasks(tasks)
+                print("Task marked as complete.")
+            except (ValueError, IndexError):
+                print("Invalid task number. Please try again.")
+        elif choice == "4":
