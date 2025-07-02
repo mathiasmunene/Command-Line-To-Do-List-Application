@@ -1,10 +1,8 @@
 import sys
-from lib.tasks import load_taks, save_tasks, add_task, view_tasks,
-    complete_task, delete_task
+from lib.tasks import load_tasks, save_tasks, add_task, view_tasks, complete_task, delete_task
 
 def main():
-    tasks = load_taks()
-
+    tasks = load_tasks()
     while True:
         print("\nTo-do List Application")
         print("1. View Task")
