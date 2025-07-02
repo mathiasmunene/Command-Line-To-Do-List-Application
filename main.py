@@ -40,3 +40,11 @@ def main():
                 print("Task deleted successfully.")
             except (ValueError, IndexError):
                 print("Invalid task number. Please try again.")
+        elif choice == "5":
+            print("Goodbye!")
+            sys.exit()
+        else:
+            print("Invalid choice. Please try again.")
+
+if __name__ == "__main__":
+    main()
