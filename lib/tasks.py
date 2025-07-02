@@ -22,3 +22,14 @@ def view_tasks(tasks):
         status = "✔" if task["completed"] else " "
         print(f"{i}. [{status}] {task['description']}")
 
+def complete_task(tasks, index):
+    if 0 <= index < len(tasks):
+        tasks[index]["completed"] = True
+    else:
+        raise IndexError("Task index out of range")
+
+def delete_task(tasks, index):
+    if 0 <= index < len(tasks):
+        tasks.pop(index)
+    else:
+        raise IndexError("Task index out of range")
