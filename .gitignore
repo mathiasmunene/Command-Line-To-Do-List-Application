@@ -1,0 +1,11 @@
+Python
+pycache/ *.pyc *.pyo *.pyd
+
+Data files
+tasks.txt
+
+IDE files
+.vscode/ .idea/
+
+Misc
+*.log
