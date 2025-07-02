@@ -32,3 +32,11 @@ def main():
             except (ValueError, IndexError):
                 print("Invalid task number. Please try again.")
         elif choice == "4":
+            view_tasks(tasks)
+            try:
+                index = int(input("Enter task number to delete: ")) - 1
+                delete_task(tasks, index)
+                save_tasks(tasks)
+                print("Task deleted successfully.")
+            except (ValueError, IndexError):
+                print("Invalid task number. Please try again.")
